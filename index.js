@@ -2,15 +2,15 @@ const express = require('express')
 const appConfig = require('./config/appConfig')
 const fs = require('fs')
 const mongoose = require('mongoose')
-const cookieParser = require('cookie-parser')
-const bodyParser = require('body-parser')
+// const cookieParser = require('cookie-parser')
+// const bodyParser = require('body-parser')
 
 const app = express()
 
 //middlewares
-app.use(bodyParser.json())
-app.use(bodyParser.urlencoded({extended:false}))
-app.use(cookieParser())
+// app.use(bodyParser.json())
+// app.use(bodyParser.urlencoded({extended:false}))
+// app.use(cookieParser())
 
 //Bootstrap Route code
 let routesPath = './routes'
